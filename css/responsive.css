@@ -1,0 +1,277 @@
+@media only screen and (orientation: landscape) {
+	body {
+		background: url("../img/home/home-landscape.jpg") no-repeat center top fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-color: #000;
+	}
+
+	/*	==================================================
+		Login section
+		==================================================	*/
+
+	#login-game-name	{ margin: 0.5em auto 0; }
+	#login-form			{ margin: 0.25em auto 0; }
+
+	/*	==================================================
+		Course selection
+		==================================================	*/
+
+	#course h3 {
+		margin-top: 2.25em;
+	}
+
+	#course-list li {
+		width: 12.5%;
+	}
+
+	/*	==================================================
+		Quiz selection
+		==================================================	*/
+
+	.answer-box {
+		margin: 0 0.5em 0 0;
+	}
+
+	#answer-list {
+		margin: 1em auto;
+		width: 100%;
+	}
+
+	#answer-list li {
+		float: left;
+		width: 23.125%;
+		margin-right: 2.5% !important;
+	}
+
+	#answer-list li:nth-child(4) {
+		margin-right: 0 !important;
+	}
+
+}
+
+@media only screen and (min-width: 480px) {
+
+	/*	==================================================
+		Share section
+		==================================================	*/
+
+	#share ul li:nth-child(1) {
+		font-size: 1em;
+	}
+
+	#share ul li:nth-child(2) {
+		font-size: 1.2em;
+	}
+}
+
+@media only screen and (min-width: 512px) {
+
+	/*	==================================================
+		Login section
+		==================================================	*/
+
+	#login-form { width: 60%; }
+
+}
+
+@media only screen and (min-width: 640px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+	/*	==================================================
+		Home section
+		==================================================	*/
+
+	#logo { width: 9em; }
+
+	/*	==================================================
+		Login section
+		==================================================	*/
+
+	#login-game-name	{ margin: 10em auto 0; }
+
+	/*	==================================================
+		Course selection
+		==================================================	*/
+
+	#course h3 {
+		margin-top: 5em;
+	}
+
+	#course-list {
+		padding-left: 7em;
+		padding-right: 7em;
+	}
+
+	.unlocked,
+	.locked {
+		margin: 1.5em auto 0;
+		width: 3.5em;
+		height: 3.5em;
+	}
+
+	/*	==================================================
+		Share section
+		==================================================	*/
+
+	#share ul li:nth-child(1) {
+		font-size: 1.05em;
+	}
+
+	#share ul li:nth-child(2) {
+		font-size: 1.3em;
+	}
+
+}
+
+@media only screen and (min-width: 896px) {
+}
+
+@media only screen and (min-width: 1024px) {
+
+	/*	==================================================
+		Login section
+		==================================================	*/
+
+	#login-game-name	{ margin: 7.5em auto 0; }
+
+	/*	==================================================
+		Course selection
+		==================================================	*/
+
+	#course h3 {
+		margin-top: 7em;
+	}
+
+	#course-list {
+		padding-left: 12em;
+		padding-right: 12em;
+	}
+
+	/*	==================================================
+		Share section
+		==================================================	*/
+
+	#share ul li:nth-child(1) {
+		font-size: 1.1em;
+	}
+
+	#share ul li:nth-child(2) {
+		font-size: 1.5em;
+	}
+
+}
+
+@media only screen and (min-width: 1366px) {
+
+	/*	==================================================
+		Login section
+		==================================================	*/
+
+	#login-form { width: 25%; }
+	#login-game-name	{ margin: 7.5em auto 0; }
+
+	/*	==================================================
+		Quiz section
+		==================================================	*/
+
+	#answer-list {
+		margin: 1em auto;
+		width: 60%;
+	}
+
+	/*	==================================================
+		Share section
+		==================================================	*/
+
+	#share ul li:nth-child(1) {
+		font-size: 1.3em;
+	}
+
+	#share ul li:nth-child(2) {
+		font-size: 1.5em;
+	}
+
+}
+
+@media only screen and (min-width: 1920px) {
+
+	/*	==================================================
+		Login section
+		==================================================	*/
+
+	#login-game-name	{ margin: 15em auto 0; }
+
+	/*	==================================================
+		Course selection
+		==================================================	*/
+
+	#course h3 {
+		margin-top: 11em;
+	}
+
+	#course-list {
+		padding-left: 22em;
+		padding-right: 22em;
+	}
+
+	/*	==================================================
+		Share section
+		==================================================	*/
+
+	#share ul li:nth-child(1) {
+		font-size: 1.5em;
+	}
+
+	#share ul li:nth-child(2) {
+		font-size: 1.6em;
+	}
+
+}
+
+@media only screen and (min-width: 2560px) {
+
+	/*	==================================================
+		Home section
+		==================================================	*/
+
+	#go-button 		{ width: 350px; }
+	#go-button h1	{ padding: 45px; font-size: 3.5em; }
+
+	/*	==================================================
+		Login section
+		==================================================	*/
+
+	#login-game-name	{ margin: 20em auto 0; }
+
+	/*	==================================================
+		Course selection
+		==================================================	*/
+
+	#course h3 {
+		margin-top: 15em;
+	}
+
+	#course-list {
+		padding-left: 30em;
+		padding-right: 30em;
+	}
+
+	/*	==================================================
+		Share section
+		==================================================	*/
+
+	#share ul li:nth-child(1) {
+		font-size: 1.7em;
+	}
+
+	#share ul li:nth-child(2) {
+		font-size: 1.7em;
+	}
+
+}

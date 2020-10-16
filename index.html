@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+	<!-- meta &  title -->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible"	content="IE=edge" />
+	<meta name="viewport"				content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>Sentences</title>
+	<!-- Icons & favicon -->
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" />
+	<!-- CSS Vendors -->
+	<!-- Normalize -->
+	<link rel="stylesheet" href="vendors/normalize/normalize.css">
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- Preloader -->
+	<div class="loader">
+		<img src="img/icons/loader.svg">
+	</div>
+	<!-- Error Messages -->
+	<div class="login-error">
+		<h4>The username or password is not correct</h4>
+	</div>
+	<div class="access-denied">
+		<h4>Course locked</h4>
+	</div>
+	<!-- Home Page -->
+	<div id="home">
+		<div class="game-name" id="home-game-name">
+			<img src="img/logos/logo-irregulars-verbs.png">
+		</div>
+		<a id="go-button" href="#">Login</a>
+	</div>
+	<!-- Login Page -->
+	<div id="login">
+		<div class="game-name" id="login-game-name">
+			<img src="img/logos/logo-irregulars-verbs.png">
+		</div>
+		<form id="login-form">
+			<input class="input__field" id="studentId" type="text" name="studentId" placeholder="Email" value="quizz@quizz.com">
+			<input class="input__field" id="studentPass" type="password" name="studentPass" placeholder="Password" value="quizz">
+			<button class="submit__button">Enter</button>
+		</form>
+	</div>
+	<!-- How to Play Page -->
+	<div id="rules">
+		<div id="rules-container">
+			<p>Es el momento de demostrar tus conocimientos. Es muy sencillo, sólo sigue estas instrucciones:</p>
+			<p>1.- Da clic en "GO"</p>
+			<p>2.- Selecciona el curso que deseas practicar. (Disponibles según el último en el que estés inscrito)</p>
+			<p>3.- Tendrás dos minutos para completar las 10 preguntas</p>
+			<p>4.- Selecciona la respuesta que consideres correcta</p>
+			<p>5.- Comparte el resultado con tus amigos</p>
+			<p>¡Juega las veces que quieras! ¿Aceptas el reto?</p>
+			<a href="#" id="go-to-level-list">GO</a>
+		</div>
+	</div>
+	<!-- Selection Level Page -->
+	<div id="course">
+		<div class="home-rules-logout">
+			<a href="#" id="back-btn">How to Play</a>
+			<a href="#" id="black-logout">Logout</a>
+		</div>
+		<h3 class="title-centered">Select a Course</h3>
+		<ul class="clearfix" id="course-list">
+			<li><div class="locked" data-index="1"></div>1</li>
+			<li><div class="locked" data-index="2"></div>2</li>
+			<li><div class="locked" data-index="3"></div>3</li>
+			<li><div class="locked" data-index="4"></div>4</li>
+			<li><div class="locked" data-index="5"></div>5</li>
+			<li><div class="locked" data-index="6"></div>6</li>
+			<li><div class="locked" data-index="7"></div>7</li>
+			<li><div class="locked" data-index="8"></div>8</li>
+			<li><div class="locked" data-index="9"></div>9</li>
+			<li><div class="locked" data-index="10"></div>10</li>
+			<li><div class="locked" data-index="11"></div>11</li>
+			<li><div class="locked" data-index="12"></div>12</li>
+			<li><div class="locked" data-index="13"></div>13</li>
+			<li><div class="locked" data-index="14"></div>14</li>
+			<li><div class="locked" data-index="15"></div>15</li>
+			<li><div class="locked" data-index="16"></div>16</li>
+			<li><div class="locked" data-index="17"></div>17</li>
+			<li><div class="locked" data-index="18"></div>18</li>
+			<li><div class="locked" data-index="19"></div>19</li>
+			<li><div class="locked" data-index="20"></div>20</li>
+			<li><div class="locked" data-index="21"></div>21</li>
+			<li><div class="locked" data-index="22"></div>22</li>
+			<li><div class="locked" data-index="23"></div>23</li>
+			<li><div class="locked" data-index="24"></div>24</li>
+		</ul>
+	</div>
+	<!-- Quizz Page -->
+	<div id="quiz">
+		<div class="home-rules-logout">
+			<a href="#" class="how-to-play">How to Play</a>
+			<a href="#" class="logout">Logout</a>
+		</div>
+		<div id="phrase-content">
+			<h3 class="title-centered" id="phrase">
+				I <span class="space"></span> to the cinema on <span class="space"></span> Wednesdays
+			</h3>
+			<ul class="clearfix" id="answer-list">
+				<li><div class="answer-box" id="answer-one">Go</div></li>
+				<li><div class="answer-box" id="answer-two">Go</div></li>
+				<li><div class="answer-box" id="answer-three">Go</div></li>
+				<li><div class="answer-box" id="answer-four">Go</div></li>
+			</ul>
+			<div id="answer">Go</div>
+		</div>
+		<div id="points-clock">
+			<span id="points"><span id="points-num">1</span>/10 points</span>
+			<span id="clock">15:00:00</span>
+		</div>
+	</div>
+	<!-- Result and Share -->
+	<div id="result-share">
+		<div class="home-rules-logout">
+			<a href="#" class="how-to-play">How to Play</a>
+			<a href="#" class="logout">Logout</a>
+		</div>
+		<div id="result-content">
+			<div id="result-points">
+				<span id="points-total">0</span>/10 points
+			</div>
+			<h3>
+				Has finalizado el juego
+			</h3>
+			<h3 id="final-message"></h3>
+			<h4>
+				Clic <a class="go-to-course" id="replay" href="#">aquí</a> para volver a jugar
+			</h4>
+			<br>
+			<br>
+		</div>
+	</div>
+	<!-- JS template to Load Every Quiz -->
+	<script type="template" id="phrase-template">
+		<div id="phrase-content">
+			<h3 class="title-centered" id="phrase">{{frase}}</h3>
+			<ul class="clearfix" id="answer-list">
+				<li><div class="answer-box" id="answer-one">{{palabra_1}}</div></li>
+				<li><div class="answer-box" id="answer-two">{{palabra_2}}</div></li>
+				<li><div class="answer-box" id="answer-three">{{palabra_3}}</div></li>
+				<li><div class="answer-box" id="answer-four">{{palabra_4}}</div></li>
+			</ul>
+			<div id="answer">{{respuesta}}</div>
+		</div>
+	</script>
+	<!-- JS Vendors -->
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script>window.jQuery || document.write('<script src="vendors/jquery/jquery-1.12.0.min.js"><\/script>')</script>
+	<!-- Countdown -->
+	<script src="vendors/countdown/jquery.countdown.min.js"></script>
+	<!-- js -->
+	<!-- Programmed Scripts -->
+	<script src="js/scripts.js"></script>
+</body>
+</html>
